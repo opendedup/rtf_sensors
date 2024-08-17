@@ -41,7 +41,7 @@ class rtf_IMU(Node):
 
         self.imu = None
 
-        frame_id = self.declare_parameter('frame_id', "base_imu_link").value
+        frame_id = self.declare_parameter('frame_id', "base_link").value
         self.accels_bias = self.declare_parameter('accels_bias', [0.,0.,0.])
         self.gyros_bias = self.declare_parameter('gyros_bias', [0.,0.,0.])
 
